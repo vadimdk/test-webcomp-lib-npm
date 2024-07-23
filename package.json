@@ -1,0 +1,39 @@
+{
+  "name": "lit-test-lib-comp",
+  "description": "Webcomponent wc-comp following open-wc recommendations",
+  "license": "MIT",
+  "author": "me-comp",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.js",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./wc-comp.js": "./dist/src/wc-comp.js",
+    "./lit-button.js": "./dist/src/lit-button.js"
+  },
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"web-dev-server\"",
+    "build": "tsc && npm run analyze -- --exclude dist",
+    "prepublish": "tsc && npm run analyze -- --exclude dist"
+  },
+  "dependencies": {
+    "lit": "^3.1.4"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.3",
+    "@web/dev-server": "^0.4.6",
+    "concurrently": "^8.2.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3"
+  },
+  "customElements": "custom-elements.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimdk/lit-web-comp-test-lib"
+  },
+  "bugs": {
+    "url": "https://github.com/vadimdk/lit-web-comp-test-lib/issues"
+  }
+}
