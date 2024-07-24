@@ -31,9 +31,9 @@
   "customElements": "custom-elements.json",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vadimdk/lit-web-comp-test-lib"
+    "url": "git+https://github.com/vadimdk/test-webcomp-lib-npm"
   },
   "bugs": {
-    "url": "https://github.com/vadimdk/lit-web-comp-test-lib/issues"
+    "url": "https://github.com/vadimdk/test-webcomp-lib-npm/issues"
   }
 }
